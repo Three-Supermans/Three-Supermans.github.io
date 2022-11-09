@@ -68,30 +68,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.example</groupId>
-                <artifactId>mavenPlugins</artifactId>
-                <version>1.0-SNAPSHOT</version>
-                <configuration>
-                    <path>this is the path</path>
-                    <params>
-                        <a>param1</a>
-                        <a>param2</a>
-                    </params>
-                    <map>
-                        <name>zhangsan</name>
-                        <age>14</age>
-                    </map>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>plugin</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 </project>
