@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>HomePage</title>
-</head>
-<body>
-<div style="text-align: center">
-    <h1>Welcome</h1>
-    <p>Hello! Welcome to our homepage</p>
-</div>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日一句</title>
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="css/elementui.css">
+    <!-- 引入组件库 -->
+    <script src="js/vue2.js"></script>
+    <script src="js/elementui.js"></script>
+    <script src="js/axios.min.js"></script>
+</head>
+
+<body>
+<div id="app" style="width: 200px;height: 200px ;text-align: center">
+    <h2>每日一句</h2>
+    <p>{{text}}</p>
+    <el-button @click='refresh' style="bottom: 10px;left:75px ; position: fixed" type="success">刷新</el-button>
+</div>
+<script src="js/main.js"></script>
 </body>
+
 </html>

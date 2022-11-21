@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "每日一句",
+  "version": "1.0",
+  "description": "Plugin Demo",
+  "icons": {
+    "48": "img/logo48_48.png",
+    "16": "img/logo16_16.png"
+  },
+  "browser_action": {
+    "default_icon": "img/logo16_16.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "content_security_policy": "style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-eval' https://cdn.bootcss.com; object-src 'self' ;"
+}
