@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "每日一句",
+  "name": "Microsoft ToDo-Lists",
   "version": "1.0",
-  "description": "Plugin Demo",
+  "description": "A Browser Plugin For Microsoft ToDo-Lists",
   "icons": {
-    "48": "img/logo48_48.png",
-    "16": "img/logo16_16.png"
+    "48": "assets/logo48_48.png",
+    "16": "assets/logo16_16.png"
   },
   "browser_action": {
-    "default_icon": "img/logo16_16.png",
+    "default_icon": "assets/logo16_16.png",
     "default_popup": "index.html"
   },
   "permissions": [
