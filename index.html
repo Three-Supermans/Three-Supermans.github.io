@@ -15,7 +15,7 @@
 
 <body>
 <div id="app">
-    <div style="width: auto;height: 500px;padding: 20px 5px 10px 0; overflow-y: scroll">
+    <div style="width: 500px;height: 500px;padding: 20px 5px 10px 0; overflow-y: scroll">
         <div class="common-layout">
             <el-container>
                 <el-header>
@@ -62,7 +62,10 @@
                         </el-menu>
                     </el-aside>
                     <el-main>
-                        <div>
+                        <div v-if="!isLogged">
+                            <el-input v-model="tokenInput" placeholder="Please paste your token here"/>
+                        </div>
+                        <div v-if="isLogged">
                             <el-input @change="addTodo" v-model="todoInput" placeholder="Hey, what's new?"
                                       class="newTodoInput"/>
                         </div>
